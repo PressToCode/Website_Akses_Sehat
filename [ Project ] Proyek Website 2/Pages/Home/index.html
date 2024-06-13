@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yayasan Akses Sehat Indonesia</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/Images/Brand Logo/favicon.jpg" />
+
+        <!-- Bootstrap 5.3.3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+        <!-- JQuery 3.7.1 via Google CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
+
+        <!-- Global Css -->
+        <link rel="stylesheet" href="/Pages/Global/Global.css" />
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div id="nav-placeholder"></div>
+
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("/Pages/Global/nav.html");
+            });
+        </script>
+        <!-- End of Navigation bar -->
+
+        <!-- Jumbotron Large -->
+        <section class="mt-lg-5 mt-4 pt-lg-5 pt-4 txt-a align-items-center justify-content-center">
+            <div id="jumbotronPadding" class="container-fluid mt-lg-5 py-lg-3">
+                <div class="d-flex flex-lg-row flex-column-reverse column-gap-3">
+                    <div class="col-lg-6 col px-lg-4 d-lg-flex flex-column justify-content-center text-lg-start text-center d-none">
+                        <h1 class="txt-title fw-bold pt-2">Yayasan Akses Sehat Indonesia</h1>
+                        <p id="jumbotronTxt" class="txt-7 pe-lg-5 ps-lg-0 px-3">
+                            Yayasan Akses Sehat Indonesia adalah organisasi nirlaba yang melakukan upaya-upaya advokasi untuk mengatasi permasalahan kesehatan masyarakat, berupaya mendorong kegiatan dan memberdayakan organisasi
+                            kemasyarakatan dalam upaya promotif dan preventif dalam kesehatan masyarakat, serta mendukung kegiatan penelitian dan publikasi ilmiah.
+                        </p>
+                        <style>
+                            #jumbotronPadding {
+                                padding-left: 0;
+                                padding-right: 0;
+
+                                @media only screen and (min-width: 992px) {
+                                    padding-left: 5vw;
+                                    padding-right: 5vw;
+                                }
+                            }
+
+                            #jumbotronTxt {
+                                text-align: justify;
+
+                                /* Font Adjustment for smaller screen */
+                                @media only screen and (max-width: 992px) {
+                                    font-size: 2.5vw !important;
+                                    text-align: center;
+                                }
+                            }
+                        </style>
+                    </div>
+                    <div id="containerJumbotron" class="col d-flex justify-content-center position-relative">
+                        <img src="/Images/Homepage/Jumbotron/homepageJumbotron.svg" class="img-fluid flex-fill animate-hover" alt="A Zoomed-In Photo of Fingertips by Aditya Romansha from Unsplash.com" style="border-radius: 2vw" />
+                        <div class="content d-flex d-lg-none flex-column align-items-center justify-content-end">
+                            <h1 class="txt-title text-light fw-bold pt-2">Yayasan Akses Sehat Indonesia</h1>
+                            <p id="jumbotronTxt" class="txt-7 pe-lg-5 ps-lg-0 pb-lg-0 pb-3 px-3 text-light">
+                                Yayasan Akses Sehat Indonesia adalah organisasi nirlaba yang melakukan upaya-upaya advokasi untuk mengatasi permasalahan kesehatan masyarakat, berupaya mendorong kegiatan dan memberdayakan organisasi
+                                kemasyarakatan dalam upaya promotif dan preventif dalam kesehatan masyarakat, serta mendukung kegiatan penelitian dan publikasi ilmiah.
+                            </p>
+                        </div>
+                        <style>
+                            #containerJumbotron .content {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                text-align: center;
+                                bottom: 0;
+                                background: rgb(0, 0, 0);
+                                background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Jumbotron -->
+
+        <!-- Program Section -->
+        <section class="mt-lg-5 pb-4 bg-a">
+            <h2 class="container-fluid text-center txt-title fw-bold py-lg-5 py-3">Our Program</h2>
+            <div class="d-flex mx-4 py-lg-5 py-3 px-lg-5 bg-b" style="border-radius: 3vw">
+                <div id="programControl" class="d-flex flex-row flex-wrap justify-content-center align-items-center">
+                    <div class="col-lg-3"></div>
+                    <div class="col-md-6 col-lg-3 mb-3 px-2 order-lg-0">
+                        <div class="card border-0 txt-a">
+                            <img src="/Images/Homepage/Program/program1.svg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title poppins-bold">TUBERCOLOSIS (TBC)</h5>
+                                <p class="card-text poppins-light" style="max-width: 50vw">Deteksi dini, pengobatan, dan edukasi untuk TBC</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md col-lg-3 mb-3 px-2 order-lg-0">
+                        <div class="card col border-0 txt-a">
+                            <img src="/images/Homepage/Program/program2.svg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title poppins-bold">IBU DAN ANAK</h5>
+                                <p class="card-text poppins-light" style="max-width: 50vw">Perawatan kesehatan komprehensif ibu hamil dan anak</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3"></div>
+                    <div class="col-md-6 col-lg-3 mb-3 px-2 order-lg-2">
+                        <div class="card col border-0 txt-a">
+                            <img src="/images/Homepage/Program/program3.svg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title poppins-bold">TUMBUH KEMBANG ANAK</h5>
+                                <p class="card-text poppins-light" style="max-width: 50vw">Dukungan perkembangan fisik dan mental anak</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md col-lg-3 mb-3 px-2 order-lg-4">
+                        <div class="card col border-0 txt-a">
+                            <img src="/images/Homepage/Program/program4.svg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title poppins-bold">STUNTING DAN NUTRISI</h5>
+                                <p class="card-text poppins-light" style="max-width: 50vw">Pencegahan stunting dengan edukasi dan nutrisi tepat</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-4"></div>
+                    <div class="col-md-6 col-lg mb-5 px-2 px-lg-5 order-lg-5">
+                        <div class="card col border-0 txt-a">
+                            <img src="/images/Homepage/Program/program5.svg" class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title poppins-bold">KESEHATAN GIGI</h5>
+                                <p class="card-text poppins-light" style="max-width: 50vw">Pemeriksaan rutin, perawatan, dan edukasi kesehatan gigi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 order-lg-5"></div>
+                    <div class="col-12 col-lg-3 order-lg-3">
+                        <div class="container-fluid text-center col mx-auto px-auto" style="max-width: 20em">
+                            <button id="learnBtn" class="btn py-2 px-4 mb-3 mb-lg-0 poppins-bold txt-title text-center" type="button">Learn More <i class="bi bi-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                #learnBtn {
+                    color: #0c6574;
+                    background-color: white;
+                    border-radius: 3vw;
+
+                    @media only screen and (min-width: 992px) {
+                        font-size: 1.5vw;
+                    }
+
+                    &:hover {
+                        background-color: rgb(231, 231, 231);
+                    }
+                }
+
+                #programControl {
+                    @media only screen and (min-width: 992px) {
+                        font-size: 1vw;
+
+                        h5 {
+                            font-size: 1.2vw;
+                        }
+                    }
+                }
+
+                .card-body {
+                    @media only screen and (max-width: 992px) {
+                        padding: 3vw !important;
+                    }
+                }
+
+                #programControl .card {
+                    border-radius: 1vw;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        animation: ease-in-out 500;
+                    }
+                }
+            </style>
+        </section>
+        <!-- End of Program Section -->
+
+        <!-- Volunteer Section -->
+        <section class="py-5 px-4 justify-content-center bg-a">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Image -->
+                    <div class="col-md-6 mb-3 text-center">
+                        <img id="volunteerImage" src="/images/Homepage/Volunteer/joinTeam.svg" class="img-fluid rounded" alt="" />
+                    </div>
+
+                    <!-- Texts -->
+                    <div class="col text-center my-auto px-5">
+                        <h2 id="volunteerTitle" class="poppins-bold mb-2">Join Our Volunteer Team</h2>
+                        <p id="volunteerTxt" class="poppins-light">
+                            Bergabunglah dengan program volunteer kami dan jadilah bagian dari perubahan positif di masyarakat! Setiap kontribusi Anda, sekecil apa pun, dapat membawa perubahan besar. Ayo bergabung sekarang dan tunjukkan
+                            bahwa kepedulian Anda dapat membuat dunia menjadi tempat yang lebih baik!
+                        </p>
+                        <style>
+                            #volunteerTxt {
+                                font-size: 0.87em;
+                            }
+
+                            #volunteerBtn {
+                                font-size: 3vw;
+                            }
+
+                            @media only screen and (min-width: 992px) {
+                                #volunteerImage {
+                                    width: 30vw;
+                                }
+
+                                #volunteerTitle {
+                                    font-size: 2vw;
+                                }
+
+                                #volunteerTxt {
+                                    font-size: 1.2vw;
+                                }
+
+                                #volunteerBtn {
+                                    font-size: 1.4vw;
+                                }
+                            }
+                        </style>
+                        <button id="volunteerBtn" class="btn orangeBtn mt-3 py-2 px-5 poppins-semibold text-light" style="border-radius: 0.7vw" type="button">Join Now!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Volunteer Section -->
+
+        <!-- Team Section -->
+        <section class="container-fluid px-5">
+            <h2 class="poppins-bold text-center py-4 txt-a txt-title">Our Team</h2>
+            <div id="myCarousel" class="carousel slide pb-5">
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active">
+                        <div class="card-wrapper d-flex flex-row column-gap-3 align-items-center justify-content-center">
+                            <div class="card border-0 bg-b">
+                                <img src="/Images/Homepage/Team/team1.svg" class="card-img-top" alt="..." />
+                                <div class="card-body txt-a text-uppercase">
+                                    <h5 class="card-title fw-bold">Ziad NR</h5>
+                                    <p class="card-text">Kepala Divisi Litbang</p>
+                                </div>
+                            </div>
+                            <div class="card border-0 bg-b no-mobile">
+                                <img src="/Images/Homepage/Team/team2.svg" class="card-img-top" alt="..." />
+                                <div class="card-body txt-a text-uppercase">
+                                    <h5 class="card-title fw-bold">Andrea Picquaiado</h5>
+                                    <p class="card-text">Direktur Eksekutif</p>
+                                </div>
+                            </div>
+                            <div class="card border-0 bg-b no-mobile">
+                                <img src="/Images/Homepage/Team/team3.svg" class="card-img-top" alt="..." />
+                                <div class="card-body txt-a text-uppercase">
+                                    <h5 class="card-title fw-bold">Michaela Brianna</h5>
+                                    <p class="card-text">Manajer Keuangan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item no-mobile">
+                        <div class="card-wrapper d-flex flex-row column-gap-3 align-items-center justify-content-center">
+                            <div class="card border-0 bg-b">
+                                <img src="/Images/Homepage/Team/team4.svg" class="card-img-top" alt="..." />
+                                <div class="card-body txt-a text-uppercase">
+                                    <h5 class="card-title fw-bold">Gambar A</h5>
+                                    <p class="card-text">Ini gambar A</p>
+                                </div>
+                            </div>
+                            <div class="card border-0 bg-b">
+                                <img src="/Images/Homepage/Team/team5.svg" class="card-img-top" alt="..." />
+                                <div class="card-body txt-a text-uppercase">
+                                    <h5 class="card-title fw-bold">Gambar B</h5>
+                                    <p class="card-text">Ini gambar B</p>
+                                </div>
+                            </div>
+                            <div class="card border-0 bg-b">
+                                <img src="/Images/Homepage/Team/team6.svg" class="card-img-top" alt="..." />
+                                <div class="card-body txt-a text-uppercase">
+                                    <h5 class="card-title fw-bold">Gambar C</h5>
+                                    <p class="card-text">Ini gambar C</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item no-large">
+                        <div class="card-wrapper d-flex flex-row column-gap-3 align-items-center justify-content-center">
+                            <div class="card border-0 bg-b">
+                                <img src="/Images/Homepage/Team/team2.svg" class="card-img-top" alt="..." />
+                                <div class="card-body txt-a text-uppercase">
+                                    <h5 class="card-title fw-bold">Andrea Picquaiado</h5>
+                                    <p class="card-text">Direktur Eksekutif</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item no-large">
+                        <div class="card-wrapper d-flex flex-row column-gap-3 align-items-center justify-content-center">
+                            <div class="card border-0 bg-b">
+                                <img src="/Images/Homepage/Team/team3.svg" class="card-img-top" alt="..." />
+                                <div class="card-body txt-a text-uppercase">
+                                    <h5 class="card-title fw-bold">Michaela Brianna</h5>
+                                    <p class="card-text">Manajer Keuangan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item no-large">
+                        <div class="card-wrapper d-flex flex-row column-gap-3 align-items-center justify-content-center">
+                            <div class="card border-0 bg-b">
+                                <img src="/Images/Homepage/Team/team4.svg" class="card-img-top" alt="..." />
+                                <div class="card-body txt-a text-uppercase">
+                                    <h5 class="card-title fw-bold">Gambar A</h5>
+                                    <p class="card-text">Ini gambar A</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item no-large">
+                        <div class="card-wrapper d-flex flex-row column-gap-3 align-items-center justify-content-center">
+                            <div class="card border-0 bg-b">
+                                <img src="/Images/Homepage/Team/team5.svg" class="card-img-top" alt="..." />
+                                <div class="card-body txt-a text-uppercase">
+                                    <h5 class="card-title fw-bold">Gambar B</h5>
+                                    <p class="card-text">Ini gambar B</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item no-large">
+                        <div class="card-wrapper d-flex flex-row column-gap-3 align-items-center justify-content-center">
+                            <div class="card border-0 bg-b">
+                                <img src="/Images/Homepage/Team/team6.svg" class="card-img-top" alt="..." />
+                                <div class="card-body txt-a text-uppercase">
+                                    <h5 class="card-title fw-bold">Gambar C</h5>
+                                    <p class="card-text">Ini gambar C</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <style>
+            .card-wrapper {
+                padding-left: 10vw;
+                padding-right: 10vw;
+            }
+
+            .card-body {
+                padding: 1vw;
+            }
+
+            .card {
+                border-radius: 1vw;
+            }
+
+            .carousel-control-next-icon {
+                background-image: url(/Images/Homepage/Team/Next.svg);
+            }
+
+            .carousel-control-prev-icon {
+                background-image: url(/Images/Homepage/Team/Previous.svg);
+            }
+        </style>
+
+        <!-- based on: https://stackoverflow.com/questions/29826448/bootstrap-carousel-how-to-hide-one-item-from-slider-on-xs-size -->
+        <!-- Function for carousel responsivity -->
+        <script>
+            $(document).ready(function () {
+                var $window = $(this);
+                var mobile_detach;
+                var large_detach;
+
+                function deviceWidth() {
+                    return $window.width();
+                }
+
+                function toggleMobileSlideVisibility(show_hide) {
+                    $no_mobile_slides = $(".carousel-inner").find(".no-mobile");
+                    $no_large_slides = $(".carousel-inner").find(".no-large");
+                    var reset_active_slide = false;
+
+                    if (show_hide === "hide_for_mobile") {
+                        $no_mobile_slides.each(function (i, e) {
+                            if ($(e).hasClass("active")) {
+                                reset_active_slide = true;
+                                $(e).removeClass("active");
+                            }
+                        });
+                        mobile_detach = $(".no-mobile").detach();
+                    } else if (show_hide === "hide_for_large") {
+                        $no_large_slides.each(function (i, e) {
+                            if ($(e).hasClass("active")) {
+                                reset_active_slide = true;
+                                $(e).removeClass("active");
+                            }
+                        });
+                        large_detach = $(".no-large").detach();
+                    } else if (show_hide === "show_for_mobile") {
+                        $(".carousel-inner").prepend(large_detach);
+                    } else if (show_hide === "show_for_large") {
+                        $(".carousel-inner").prepend(mobile_detach);
+                    }
+
+                    if (reset_active_slide) {
+                        $(".carousel-inner").find(".item").first().addClass("active");
+                    }
+                }
+
+                var is_mobile_device = false;
+
+                var detectMobile = function detectMobile() {
+                    if (deviceWidth() > 992) {
+                        if (is_mobile_device) {
+                            toggleMobileSlideVisibility("hide_for_large");
+                            toggleMobileSlideVisibility("show_for_large");
+                            $("#myCarousel").load(location.href + " #myCarousel"); /* Reload the carousel lol */
+                        } else {
+                            toggleMobileSlideVisibility("hide_for_large");
+                        }
+                        is_mobile_device = false;
+                    } else {
+                        if (!is_mobile_device) {
+                            toggleMobileSlideVisibility("show_for_mobile");
+                            toggleMobileSlideVisibility("hide_for_mobile");
+                        } else {
+                            toggleMobileSlideVisibility("hide_for_mobile");
+                        }
+                        is_mobile_device = true;
+                    }
+                };
+
+                $(window).on("resize", function () {
+                    detectMobile();
+                });
+
+                detectMobile();
+            });
+        </script>
+        <!-- End of Team Section -->
+
+        <!-- Donation Section -->
+        <section class="d-flex align-items-center justify-content-center py-lg-5 mb-5">
+            <div id="donation" class="container-fluid row bg-b py-4 px-lg-4 justify-content-center align-items-center">
+                <div class="col-lg-6 col-12 d-flex flex-column text-center">
+                    <h5 class="txt-a poppins-bold">Kami Membuka Donasi!</h5>
+                    <p class="txt-a">Dukungan anda sangat berarti bagi kami!</p>
+                    <div class="d-none d-lg-flex align-items-center justify-content-center">
+                        <button class="btn orangeBtn text-light px-lg-5" type="button">Donate</button>
+                    </div>
+                </div>
+                <div class="row col d-flex px-lg-4 px-5 align-items-center justify-content-center">
+                    <div class="d-flex flex-column py-lg-3 py-2 px-3 ps-lg-3 pe-lg-5" style="background-color: #e8fafd; border-radius: 1vw">
+                        <h5 id="dc1" class="poppins-bold txt-b" style="font-size: 0.8vw">Donation Count</h5>
+                        <h3 id="dc2" class="poppins-bold txt-a flex-fill" style="font-size: 1.4vw">Rp 999,999,999,-</h3>
+                    </div>
+                    <div class="d-flex d-lg-none align-items-center justify-content-center pt-4">
+                        <button class="btn orangeBtn text-light px-5" type="button">Donate</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            #donation {
+                padding: 2vw;
+                border-radius: 3vw;
+                margin-left: 18vw;
+                margin-right: 18vw;
+
+                p {
+                    font-size: 1vw;
+                    margin-top: -0.8vw;
+                }
+
+                h5 {
+                    font-size: 2vw;
+                }
+            }
+
+            @media only screen and (max-width: 992px) {
+                #donation {
+                    margin-left: 10vw;
+                    margin-right: 10vw;
+
+                    p {
+                        font-size: 3vw;
+                    }
+
+                    h5 {
+                        font-size: 5.5vw;
+                    }
+                }
+
+                #dc1 {
+                    font-size: 3vw !important;
+                }
+
+                #dc2 {
+                    font-size: 4vw !important;
+                }
+            }
+        </style>
+        <!-- End of Donation Section -->
+
+        <!-- Footer / Place end of page -->
+        <div id="foot-placeholder"></div>
+
+        <script>
+            $(function () {
+                $("#foot-placeholder").load("/Pages/Global/footer.html");
+            });
+        </script>
+        <!-- End of Footer -->
+
+        <!-- Bootstrap JavaScript / Place before end of body tag -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

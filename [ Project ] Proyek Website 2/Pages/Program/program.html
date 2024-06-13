@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yayasan Akses Sehat Indonesia</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/Images/Brand Logo/favicon.jpg" />
+
+        <!-- Bootstrap 5.3.3 -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+        <!-- JQuery 3.7.1 via Google CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
+
+        <!-- Global Css -->
+        <link rel="stylesheet" href="/Pages/Global/Global.css" />
+    </head>
+    <body>
+        <!-- Navigation bar -->
+        <div id="nav-placeholder"></div>
+
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("/Pages/Global/nav.html");
+            });
+        </script>
+        <!-- End of Navigation bar -->
+
+        <!-- Programs -->
+        <section id="programSection" class="d-flex flex-column justify-content-center py-lg-5 pt-5 mt-lg-5 mt-3 border border-3 position-relative" style="background-color: #e6f0f0; border-radius: 0 0 7vw 7vw">
+            <div class="txt-a text-center pt-lg-3 pt-5">
+                <h4 class="poppins-bold txt-title">Programs</h4>
+                <p class="txt-7">seluruh detail mengenai program-program yang kami jalankan</p>
+            </div>
+            <div class="d-flex flex-lg-row flex-column row-cols-lg-2 py-lg-5 px-lg-5 py-3 px-3 progContainer">
+                <div class="d-flex justify-content-center">
+                    <img src="/Images/Program/LungsImage.svg" class="img-fluid imageContainer" alt="" />
+                </div>
+                <div class="d-flex flex-column justify-content-evenly py-4 px-4 px-lg-0 py-lg-0">
+                    <h5 class="text-uppercase poppins-bold pb-lg-4 pb-2 text-center text-lg-start">Tubercolosis (TBC)</h5>
+                    <p>Kampanye edukasi dan promosi kesehatan tentang TBC</p>
+                    <p>Skrining TBC gratis untuk kelompok berisiko tinggi</p>
+                    <p>Pengobatan TBC yang efektif dan aman</p>
+                    <p>Dukungan dan konsepng bagi pasien TBC dan keluarga</p>
+                </div>
+            </div>
+            <div class="d-flex flex-lg-row flex-column row-cols-lg-2 py-lg-5 px-lg-5 py-3 px-3 progContainer" style="background-color: #accacf">
+                <div class="d-flex justify-content-center order-lg-1">
+                    <img src="/Images/Program/MotherBabyImage.svg" class="img-fluid imageContainer" alt="" />
+                </div>
+                <div class="d-flex flex-column justify-content-evenly py-4 px-4 px-lg-0 py-lg-0 order-lg-0 txt-a">
+                    <h5 class="text-uppercase poppins-bold pb-lg-4 pb-2 text-center text-lg-start">Kesehatan Ibu dan Anak</h5>
+                    <p>Dukungan dan konseling untuk ibu dan anak.</p>
+                    <p>Imunisasi rutin untuk bayi baru lahir.</p>
+                    <p>Pelatihan tentang perawatan ibu dan anak.</p>
+                    <p>Layanan antenatal dan postnatal untuk ibu hamil</p>
+                </div>
+            </div>
+            <div class="d-flex flex-lg-row flex-column row-cols-lg-2 py-lg-5 px-lg-5 py-3 px-3 progContainer">
+                <div class="d-flex justify-content-center">
+                    <img src="/Images/Program/kidsImage.svg" class="img-fluid imageContainer" alt="" />
+                </div>
+                <div class="d-flex flex-column justify-content-evenly py-4 px-4 px-lg-0 py-lg-0">
+                    <h5 class="text-uppercase poppins-bold pb-lg-4 pb-2 text-center text-lg-start">Tumbuh Kembang Anak</h5>
+                    <p>Pendidikan anak usia dini yang berkualitas tinggi</p>
+                    <p>Layanan kesehatan dan gizi anak yang komprehensif.</p>
+                    <p>Pelatihan tenaga kesehatan tentang perkembangan anak.</p>
+                    <p>Penelitian untuk mengembangkan metode yang lebih baik untuk mendukung perkembangan anak.</p>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center row-cols-lg-2 py-lg-5 px-lg-5 py-3 px-3">
+                <button type="button" class="btn border-0">
+                    <img id="buttonSize" src="/Images/Program/DownButton.svg" style="width: 10%" />
+                </button>
+            </div>
+        </section>
+
+        <style>
+            #programSection .progContainer {
+                background-color: #7ba0a6;
+                margin: 5vh 4vw 5vh 4vw;
+                border-radius: 3vw;
+            }
+
+            #programSection h5 {
+                font-size: 3vw;
+            }
+
+            #programSection p {
+                font-size: 1.2vw;
+            }
+
+            @media only screen and (max-width: 992px) {
+                #programSection .progContainer {
+                    border-radius: 13vw;
+                    margin: 3vh 4vw 3vh 4vw;
+                }
+
+                #programSection .imageContainer {
+                    margin: 4vw 12vw 0 12vw;
+                }
+
+                #programSection h5 {
+                    font-size: 4vw;
+                }
+
+                #programSection p {
+                    font-size: 2.4vw;
+                }
+
+                #programSection #buttonSize {
+                    width: 60% !important;
+                }
+            }
+        </style>
+        <!-- End of Programs -->
+
+        <!-- Testimony Section -->
+        <section id="wtsSection" class="d-flex flex-column">
+            <h4 class="py-lg-5 py-4 text-center poppins-bold txt-title">Apa Kata Mereka?</h4>
+            <!-- bro wtf honestly why u made me do this -->
+            <div class="d-flex px-lg-5 mx-lg-5 px-3 justify-content-center align-items-end">
+                <div class="d-flex flex-column align-items-center py-lg-5 animate-hover">
+                    <img src="/Images/Program/Testimony-left.svg" class="position-relative" alt="" width="70%" />
+                    <div class="d-flex flex-column text-center txt-a bg-light containerTextAC">
+                        <blockquote class="txt-5">"Terima kasih AksesSehat! Saya sekarang bisa makan makanan yang sehat dan enak. Saya juga jadi lebih kuat dan bisa bermain bersama teman-temanku!”</blockquote>
+                        <h5 class="text-uppercase poppins-bold py-lg-3">Roni Abidemi</h5>
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-center justify-content-center px-lg-5 animate-hover">
+                    <img src="/Images/Program/Testimony-middle.svg" class="position-relative" alt="" width="60%" />
+                    <div id="containerTextB" class="d-flex flex-column text-center txt-a bg-light">
+                        <blockquote style="font-size: 1.5vw">
+                            "Saya sangat terbantu dengan program kesehatan ibu dan anak dari AksesSehat. Dari pemeriksaan kehamilan hingga imunisasi anak saya, semuanya ditangani dengan sangat baik. Terima kasih AksesSehat!"
+                        </blockquote>
+                        <h5 class="text-uppercase poppins-bold py-lg-3">Elizabeth Siti</h5>
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-center py-lg-5 animate-hover">
+                    <img src="/Images/Program/Testimony-right.svg" class="position-relative" alt="" width="70%" />
+                    <div class="d-flex flex-column text-center txt-a bg-light containerTextAC">
+                        <blockquote class="txt-5">"Program deteksi dini TBC benar-benar menyelamatkan hidup saya. Saya bisa mendapatkan pengobatan tepat waktu dan sekarang saya sudah sembuh total!”</blockquote>
+                        <h5 class="text-uppercase poppins-bold py-lg-3">Andi Yuchen</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            #wtsSection {
+                margin-top: -14vh;
+                padding-top: 18vh;
+                padding-bottom: 24vh;
+                background: linear-gradient(180deg, rgba(12, 101, 116, 1) 0%, rgba(12, 101, 116, 0.7091211484593838) 100%);
+            }
+
+            #wtsSection .containerTextAC {
+                width: 20vw;
+                padding: 14vh 3vw 0 3vw;
+                margin: -10vh 0 0 0;
+                border-radius: 2vw;
+            }
+
+            #wtsSection #containerTextB {
+                width: 25vw;
+                padding: 14vh 3vw 0 3vw;
+                margin: -10vh 0 0 0;
+                border-radius: 2vw;
+            }
+
+            #wtsSection blockquote {
+                font-size: 1.3vw;
+            }
+
+            #wtsSection h5 {
+                font-size: 2vw;
+            }
+
+            @media only screen and (max-width: 992px) {
+                #wtsSection blockquote {
+                    font-size: 1.7vw;
+                }
+
+                #wtsSection .containerTextAC {
+                    width: 27vw;
+                    padding: 11vh 3vw 0 3vw;
+                    margin: -10vh 0 0 0;
+                    border-radius: 2vw;
+                }
+
+                #wtsSection #containerTextB {
+                    width: 25vw;
+                    padding: 11vh 3vw 0 3vw;
+                    margin: -10vh 0 0 0;
+                    border-radius: 2vw;
+                }
+            }
+        </style>
+        <!-- End of Testimony Section -->
+
+        <!-- Partner Section -->
+        <section id="partnerSection" class="bg-b z-1 position-relative" style="border-radius: 10vw 10vw 0 0; margin-top: -18vh">
+            <div class="d-flex flex-column py-5 px-5">
+                <h4 class="txt-a poppins-bold py-4 py-lg-5">Dengan support partner kami</h4>
+                <div class="d-flex flex-row justify-content-center justify-content-lg-evenly">
+                    <img src="/Images/Program/LogoKemekes.svg" class="img-fluid col-6 py-5 px-5" alt="" />
+                    <img src="/Images/Program/LogoPenabulu.svg" class="img-fluid col-6 py-5 px-3" alt="" />
+                </div>
+                <div class="d-flex flex-row justify-content-center justify-content-lg-evenly">
+                    <img src="/Images/Program/logoGeneros.svg" class="img col-6 py-5 px-5" alt="" />
+                    <img src="/Images/Program/logoTheGlobalFoundation.svg" class="img-fluid col-6 py-5 px-5" alt="" />
+                </div>
+            </div>
+        </section>
+        <style>
+            @media only screen and (min-width: 992px) {
+                #partnerSection img {
+                    width: 30vw !important;
+                }
+            }
+        </style>
+        <!-- End of Partner Section -->
+
+        <!-- Footer / Place end of page -->
+        <div id="foot-placeholder"></div>
+
+        <script>
+            $(function () {
+                $("#foot-placeholder").load("/Pages/Global/footer.html");
+            });
+        </script>
+        <!-- End of Footer -->
+
+        <!-- Bootstrap JavaScript / Place before end of body tag -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
+</html>

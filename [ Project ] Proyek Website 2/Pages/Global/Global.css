@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+    font-family: "Poppins", "Times New Roman", Times, serif;
+    background-color: #e6f0f0;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Animated Hover (only on large screen) */
+.animate-hover:hover {
+    @media only screen and (min-width: 992px) {
+        transform: scale(1.05);
+        animation: ease-in-out 500;
+    }
+}
+
+/* Frequently Used */
+.orangeBtn {
+    background-color: #f16257;
+
+    &:hover {
+        background-color: #ed392b;
+    }
+}
+
+/* Background Color Palette */
+.bg-a {
+    background-color: #0c6574;
+}
+
+.bg-b {
+    background-color: #accacf;
+}
+
+.bg-c {
+    background-color: #ed392b;
+}
+
+/* Text Color Palette */
+.txt-a {
+    color: #0c6574;
+}
+
+.txt-b {
+    color: #accacf;
+}
+
+.txt-c {
+    color: #ed392b;
+}
+
+/* Standardized text-size for responsive screen */
+.txt-1 {
+    font-size: 0.3vw;
+}
+
+.txt-2 {
+    font-size: 0.5vw;
+}
+
+.txt-3 {
+    font-size: 0.7vw;
+}
+
+.txt-4 {
+    font-size: 0.9vw;
+}
+
+.txt-5 {
+    font-size: 1vw;
+}
+
+.txt-6 {
+    font-size: 1.2vw;
+}
+
+.txt-7 {
+    font-size: 1.4vw;
+
+    @media only screen and (max-width: 992px) {
+        font-size: 2.2vw;
+    }
+}
+
+.txt-8 {
+    font-size: 1.6vw;
+}
+
+.txt-9 {
+    font-size: 1.8vw;
+}
+
+.txt-10 {
+    font-size: 2vw;
+}
+
+.txt-title {
+    font-size: 3vw;
+
+    @media only screen and (max-width: 992px) {
+        font-size: 5vw;
+    }
+}

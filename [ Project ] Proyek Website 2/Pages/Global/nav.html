@@ -1,0 +1,66 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg shadow-lg fixed-top bg-a" data-bs-theme="dark">
+    <div class="container-fluid px-lg-5 py-1">
+        <a class="navbar-brand" href="/Pages/Home/index.html">
+            <img src="/Images/Brand Logo/LogoAksesSehat.svg" alt="Logo Akses Sehat" height="50" />
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav col nav-justified fs-5">
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link LogRegBtn" role="button" href="/Pages/Login-Signup/login.html"> Log-in </a>
+                </li>
+                <li class="nav-item d-block d-lg-none">
+                    <a class="nav-link LogRegBtn" role="button" href="/Pages/Login-Signup/Register.html"> Sign-up </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a id="home" class="nav-link" role="button" aria-current="home" href="/Pages/Home/index.html"> Home </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a id="aboutUs" class="nav-link" role="button" aria-current="About Us" href="/Pages/About Us/aboutUs.html"> About Us </a>
+                </li>
+                <li class="nav-item d-flex align-items-center">
+                    <a id="program" class="nav-link" role="button" aria-current="Program" href="/Pages/Program/program.html"> Program </a>
+                </li>
+                <li class="nav-item dropdown d-flex align-items-center">
+                    <button class="nav-link dropdown-toggle" type="button" data-bs-auto-close="true" data-bs-toggle="dropdown" aria-expanded="false">Others</button>
+                    <ul class="dropdown-menu bg-a" role="menu">
+                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                        <li><a class="dropdown-item" href="#">Volunteer</a></li>
+                        <li><a class="dropdown-item" href="#">Donate</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item d-none d-lg-flex align-items-center">
+                    <form class="container-fluid">
+                        <!-- Add target="_blank" to open in new tab -->
+                        <a href="/Pages/Login-Signup/Register.html">
+                            <button id="authBtn" class="btn me-2 orangeBtn" type="button">Log In/Sign In</button>
+                        </a>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- JQuery Script to set Active State / Import JQuery! -->
+<script>
+    $(document).ready(function () {
+        function getCurentFileName() {
+            var pagePathName = window.location.pathname;
+            return pagePathName.substring(pagePathName.lastIndexOf("/") + 1);
+        }
+
+        if (getCurentFileName() === "index.html") {
+            $("#home").addClass("active");
+        } else if (getCurentFileName() === "aboutUs.html") {
+            $("#aboutUs").addClass("active");
+        } else if (getCurentFileName() === "program.html") {
+            $("#program").addClass("active");
+        }
+    });
+</script>
+<!-- Akhir Navbar -->
