@@ -1,0 +1,8 @@
+Homepage consist of:
+- Navigation Bar 
+- Jumbotron (Hero Image)
+- Program Section
+- Volunteer Section
+- Our Team Section
+- Donation Section
+- Footer
