@@ -32,10 +32,204 @@
         <!-- End of Navigation bar -->
 
         <!-- Setting Layout -->
-        <!-- Since this might be a multi-page with similar layout-->
-        <section>
-            
+        <section id="layoutContainer">
+            <section id="upperSection" class="d-flex align-items-center justify-content-around justify-content-lg-between">
+                <div class="d-flex align-items-center justify-content-center input-group">
+                    <i class="bi bi-search txt-a"></i>
+                    <input id="searchBar" type="text" class="form-control bg-transparent border-0 shadow-none" placeholder="Search Settings" aria-label="Search" aria-describedby="Search" />
+                    <button class="input-group-text border-0 bg-transparent txt-a" onclick="$('#searchBar').val('')"><i class="bi bi-x-lg"></i></button>
+                </div>
+                <button id="profileButton" class="btn txt-a poppins-bold d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#sidebarSection" aria-controls="Sidebar Button">Profil <i class="bi bi-chevron-down"></i></button>
+                <h3 class="txt-a poppins-bold d-none d-lg-block">Profil</h3>
+            </section>
+            <div class="d-flex flex-lg-row flex-grow-1">
+                <section id="sidebarSection" class="col-3 offcanvas-lg offcanvas-start" tabindex="-1" aria-labelledby="Sidebar">
+                    <div class="d-flex align-items-start offcanvas-body">
+                        <div class="nav flex-column row-gap-3 flex-grow-1 nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <button class="nav-link text-start txt-a active" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="true">
+                                <i class="bi bi-person-fill"></i> Profil
+                            </button>
+                            <button class="nav-link text-start txt-a" id="v-pills-general-tab" data-bs-toggle="pill" data-bs-target="#v-pills-general" type="button" role="tab" aria-controls="v-pills-general" aria-selected="false">
+                                <i class="bi bi-gear-fill"></i> General
+                            </button>
+                            <button class="nav-link text-start txt-a" id="v-pills-connection-tab" data-bs-toggle="pill" data-bs-target="#v-pills-connection" type="button" role="tab" aria-controls="v-pills-connection" aria-selected="false">
+                                <i class="bi bi-intersect"></i> Koneksi
+                            </button>
+                            <button
+                                class="nav-link text-start txt-a"
+                                id="v-pills-accessibility-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#v-pills-accessibility"
+                                type="button"
+                                role="tab"
+                                aria-controls="v-pills-accessibility"
+                                aria-selected="false"
+                            >
+                                <i class="bi bi-person-arms-up"></i> Aksesibilitas
+                            </button>
+                            <button class="nav-link text-start txt-a" id="v-pills-security-tab" data-bs-toggle="pill" data-bs-target="#v-pills-security" type="button" role="tab" aria-controls="v-pills-security" aria-selected="false">
+                                <i class="bi bi-shield-lock-fill"></i> Sekuritas
+                            </button>
+                            <a href="/Pages/Home/index.html" class="nav-link">
+                                <button class="btn btn-danger text-white text-start txt-a">Log Out</button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section id="pageSection" class="col">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active d-flex flex-row justify-content-lg-evenly justify-content-around" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
+                            <div id="formContainer">
+                                <label id="usernameLabel" for="usernameForm" class="form-label txt-a poppins-light"> <i class="bi bi-person-fill"></i> Username</label>
+                                <input type="text" class="form-control shadow-none bg-transparent rounded-pill" id="usernameForm" placeholder="Enter your username" />
+
+                                <label for="emailForm" class="form-label txt-a poppins-light"> <i class="bi bi-person-fill"></i> Email Address </label>
+                                <input type="text" class="form-control shadow-none bg-transparent rounded-pill" id="emailForm" placeholder="Add your Email Address" />
+
+                                <label for="phoneNumber" class="form-label txt-a poppins-light"> <i class="bi bi-person-fill"></i> Phone Number </label>
+                                <input type="text" class="form-control shadow-none bg-transparent rounded-pill" id="phoneNumber" placeholder="Enter your phone number" />
+                                <label for="phoneNumber" class="form-label text-danger poppins-light" style="margin: 1vh; font-size: calc(70%)"> Phone number invalid! (0-9) </label>
+
+                                <a href="" class="d-flex txt-a"><i class="bi bi-lock-fill"></i><i class="bi bi-key-fill"> &nbsp; </i> Change your password here </a>
+                            </div>
+                            <div id="imageContainer" class="d-flex flex-column align-items-center">
+                                <img src="/Images/Settings/Profile.svg" class="img-fluid" alt="" />
+                                <div class="d-flex flex-row column-gap-3 justify-content-center align-items-center text-light">
+                                    <button class="btn btn-info"><i class="bi bi-camera-fill"></i></button>
+                                    <button class="btn btn-danger"><i class="bi bi-trash-fill"></i></button>
+                                </div>
+                                <button id="saveButton" class="btn orangeBtn text-light text-center">Save</button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-general" role="tabpanel" aria-labelledby="v-pills-general-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="v-pills-connection" role="tabpanel" aria-labelledby="v-pills-connection-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="v-pills-accessibility" role="tabpanel" aria-labelledby="v-pills-accessibility-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="v-pills-security" role="tabpanel" aria-labelledby="v-pills-security-tab" tabindex="0">...</div>
+                    </div>
+                </section>
+            </div>
         </section>
+        <style>
+            #layoutContainer {
+                margin-top: 12vh;
+
+                #upperSection {
+                    height: 20vh;
+                    padding: 0 5vw 0 8vw;
+                    border-bottom: 1px solid #0c6574;
+
+                    div {
+                        max-height: 80%;
+                        width: 25vw;
+                        border: 1px solid #0c6574;
+                        border-radius: 1vw;
+                        padding: 1vh 0.3vw 1vh 1vw;
+                        box-shadow: 0 0 2px 5px rgba(12, 101, 116, 0.1);
+
+                        ::placeholder {
+                            color: rgba(12, 101, 116, 0.5);
+                        }
+                    }
+
+                    button {
+                        font-size: calc(100%);
+
+                        &:hover {
+                            color: rgba(12, 101, 116, 0.8);
+                        }
+                    }
+                }
+
+                #pageSection {
+                    padding: 5vh 0 5vh 0;
+                }
+
+                #sidebarSection {
+                    padding: 5vh 0 5vh 0;
+                    border-right: 1px solid #0c6574;
+
+                    .nav-link {
+                        border-radius: 0;
+                        padding: 3vh 0 3vh 5vw;
+
+                        &:hover {
+                            color: rgba(12, 101, 116, 0.7);
+                        }
+                    }
+
+                    .nav-link.active {
+                        font-weight: bold;
+                        color: #0c6574;
+                        background-color: rgba(12, 101, 116, 0.1);
+                        border-right: 3px solid rgba(12, 101, 116, 0.4);
+                    }
+                }
+
+                #formContainer {
+                    ::placeholder {
+                        color: rgba(12, 101, 116, 0.4);
+                    }
+
+                    label {
+                        margin: 8vh 0 2vh 0;
+                    }
+
+                    input {
+                        padding: 2vh 5vw 2vh 2vw;
+                        border-color: #0c6574;
+                    }
+
+                    #usernameLabel {
+                        margin: 0 0 2vh 0;
+                    }
+                }
+
+                #imageContainer {
+                    img {
+                        width: 70%;
+                    }
+
+                    #saveButton {
+                        margin: 5vh 0 0 0;
+                        padding: 1vh 0 1vh 0;
+                        width: 50%;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 992px) {
+                #layoutContainer {
+                    #upperSection {
+                        padding: 4vh 0 2vh 0;
+                        height: 15vh;
+
+                        div {
+                            max-height: 90%;
+                            width: 50vw;
+                            border-radius: 2.5vw;
+                            padding: 0 1vw 0 3vw;
+                        }
+
+                        button {
+                            font-size: calc(70%);
+                            padding: 0 3vw 0 0;
+                        }
+
+                        #profileButton {
+                            font-size: 5vw;
+                        }
+                    }
+
+                    #formContainer {
+                        padding: 0 0 0 4vw;
+
+                        label {
+                            margin: 3vh 0 1vh 0;
+                        }
+                    }
+                }
+            }
+        </style>
         <!-- End of setting layout -->
 
         <!-- Footer / Place end of page -->
