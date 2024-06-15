@@ -32,7 +32,7 @@
         <!-- End of Navigation bar -->
 
         <!-- Volunteer Form Section -->
-        <section class="py-5 mt-5">
+        <!-- <section class="py-5 mt-5">
             <div id="formContainer" class="d-flex py-lg-5 py-3 px-lg-5 ps-3 mx-5 mt-5 bg-b backdrop-shadow">
                 <div class="d-flex flex-row row-cols-2 flex-wrap px-lg-5 flex-grow-1">
                     <div class="d-flex align-items-center col-1">
@@ -136,6 +136,166 @@
 
                     a {
                         font-size: 3vw !important;
+                    }
+                }
+            }
+        </style> -->
+
+        <section>
+            <div id="formContainer" class="d-flex flex-column bg-b">
+                <div class="d-flex flex-row flex-grow-1">
+                    <div class="d-flex align-items-center col-1">
+                        <i id="arrow" class="bi bi-arrow-left txt-a"></i>
+                    </div>
+                    <div class="d-flex align-items-center col">
+                        <h4 id="submission" class="txt-a poppins-bold my-auto">Submission</h4>
+                    </div>
+                </div>
+                <div class="d-flex flex-row">
+                    <div class="col-1"></div>
+                    <div class="d-flex flex-column col">
+                        <div id="option1" class="input-group backdrop-shadow">
+                            <img src="/Images/Volunteer/vf_iconHand.svg" class="img-fluid" alt="" />
+                            <select class="form-select bg-transparent border-0 outline-none shadow-none txt-a" aria-label="Volunteer Option Select Dropdown">
+                                <option selected>Choose your volunteer option</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="d-flex align-items-center input-group backdrop-shadow textField">
+                            <i class="bi bi-person-fill txt-a"></i>
+                            <input type="text" class="form-control bg-transparent border-0 outline-none shadow-none" placeholder="Enter your fullname" aria-label="Username" aria-describedby="Enter Fullname" />
+                        </div>
+                        <div class="d-flex align-items-center input-group backdrop-shadow textField">
+                            <i class="bi bi-telephone-fill txt-a"></i>
+                            <input type="text" class="form-control bg-transparent border-0 outline-none shadow-none" placeholder="Enter your Whatsapp Number" aria-label="Telephone Number" aria-describedby="Enter Full Telephone Number" />
+                        </div>
+                        <h5 class="txt-a poppins-bold">Upload Your Documents</h5>
+                        <a id="docReq" href=""> Document Requirement </a>
+                        <a href="">
+                            <button id="uploadBtn" class="btn bg-a"><i class="bi bi-upload text-light"></i></button>
+                        </a>
+                        <div id="buttonContainer" class="d-flex justify-content-center">
+                            <a href="">
+                                <button class="btn orangeBtn text-light poppins-bold">Submit</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <style>
+            #formContainer {
+                margin: 25vh 10vw 5vh 10vw;
+                padding: 3vh 8vw 3vh 3vw;
+                border-radius: 3vw;
+
+                #arrow {
+                    font-size: 3vw;
+                    padding-right: 1.5vw;
+                    margin-bottom: calc(-1 * 100% / 3); /* Get Accurate sizing */
+                    margin-top: calc(-1 * 100% / 4);
+                }
+
+                #option1 {
+                    padding: 2vh 0 2vh 3vh;
+                    margin: 1vh 0 3vh 0;
+                    border-radius: 3vw;
+                    background-color: #e6f0f0;
+
+                    img {
+                        padding: 0 1.1vw 0 1vw;
+                    }
+
+                    option {
+                        background-color: #accacf;
+                    }
+                }
+
+                .textField {
+                    padding: 2vh 0 2vh 3vh;
+                    margin: 1vh 0 3vh 0;
+                    border-radius: 3vw;
+                    background-color: #e6f0f0;
+
+                    i {
+                        padding: 0 1.7vw 0 1vw;
+                    }
+
+                    ::placeholder {
+                        color: #0c6574;
+                    }
+                }
+
+                h5 {
+                    margin: 3vh 0 1vh 0;
+                    font-size: 2vw;
+                }
+
+                #docReq {
+                    font-size: 1.2vw;
+                    margin-bottom: 3vh;
+                }
+
+                #uploadBtn {
+                    font-size: 2vw;
+                    padding: 1vh 5vw 1vh 5vw;
+                    border-radius: 3vw;
+                }
+
+                #buttonContainer {
+                    margin: 3vh 0 3vh 0;
+
+                    button {
+                        padding: 2vh 5vw 2vh 5vw;
+                        border-radius: 5vw;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 992px) {
+                #formContainer {
+                    margin: 18vh 5vw 5vh 5vw;
+                    padding: 2vh 8vw 2vh 3vw;
+
+                    #arrow {
+                        font-size: 6vw;
+                        padding-right: 3vw;
+                    }
+
+                    #submission {
+                        font-size: 6vw;
+                        padding-left: 0.5vw;
+                    }
+
+                    #option1 {
+                        padding: 0.5vh 0 0.5vh 0;
+                        border-radius: 5vw;
+
+                        img {
+                            padding: 0 0 0 3vw;
+                        }
+                    }
+
+                    .textField {
+                        padding: 0.5vh 0 0.5vh 3vw;
+                        border-radius: 5vw;
+                    }
+
+                    h5 {
+                        margin: 2vh 0 0.6vh 0;
+                        font-size: 5vw;
+                    }
+
+                    #docReq {
+                        font-size: 3vw !important;
+                    }
+
+                    #uploadBtn {
+                        font-size: 4vw;
+                        padding: 1.5vh 8vw 1.5vh 8vw;
+                        border-radius: 8vw;
                     }
                 }
             }
