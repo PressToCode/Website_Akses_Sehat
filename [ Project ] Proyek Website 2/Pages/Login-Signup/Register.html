@@ -33,7 +33,7 @@
 
         <!-- Login Area -->
         <div class="d-flex align-items-center justify-content-center vh-100 bg-b pt-5">
-            <div id="areaContainer" class="d-flex flex-row bg-light px-0">
+            <div id="areaContainer" class="d-flex flex-row bg-light px-0 backdrop-shadow">
                 <div class="d-flex flex-row overflow-hidden" style="width: 100%">
                     <div class="col-4"></div>
                     <div class="col">
@@ -74,7 +74,7 @@
                                 </div>
                                 <hr class="txt-a bg-b" style="margin-top: -2vh" />
                             </form>
-                            <div class="d-flex flex-row align-items-center justify-content-between part">
+                            <div class="d-flex flex-row align-items-center justify-content-between part pb-5">
                                 <button id="loginBtn" class="btn text-light bg-a py-lg-2 px-lg-5">Register</button>
                                 <a href="/Pages/Login-Signup/login.html" style="text-decoration: none"> Already have an account? </a>
                             </div>
@@ -90,7 +90,6 @@
                 max-height: 85%;
                 min-height: 80%;
                 border-radius: 2.2vw;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
                 background-image: url(/Images/Login/sideImageFull.svg);
                 background-size: cover;
                 background-position-y: 70%;
@@ -98,6 +97,7 @@
 
                 @media only screen and (max-width: 992px) {
                     background-repeat: no-repeat;
+                    min-height: auto;
                     max-width: 90%;
                     background-size: cover;
                     background-position-x: 30%;

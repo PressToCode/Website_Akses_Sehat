@@ -32,7 +32,7 @@
         <!-- End of Navigation bar -->
 
         <!-- Programs -->
-        <section id="programSection" class="d-flex flex-column justify-content-center py-lg-5 pt-5 mt-lg-5 mt-3 border border-3 position-relative" style="background-color: #e6f0f0; border-radius: 0 0 7vw 7vw">
+        <section id="programSection" class="d-flex flex-column justify-content-center py-lg-5 pt-5 mt-lg-5 mt-3 position-relative" style="background-color: #e6f0f0; border-radius: 0 0 7vw 7vw">
             <div class="txt-a text-center pt-lg-3 pt-5">
                 <h4 class="poppins-bold txt-title">Programs</h4>
                 <p class="txt-7">seluruh detail mengenai program-program yang kami jalankan</p>
@@ -73,8 +73,34 @@
                     <p>Penelitian untuk mengembangkan metode yang lebih baik untuk mendukung perkembangan anak.</p>
                 </div>
             </div>
+            <div class="collapse" id="collapsedProgram">
+                <div class="d-flex flex-lg-row flex-column row-cols-lg-2 py-lg-5 px-lg-5 py-3 px-3 progContainer" style="background-color: #accacf">
+                    <div class="d-flex justify-content-center order-lg-1">
+                        <img src="/Images/Program/MotherBabyImage.svg" class="img-fluid imageContainer" alt="" />
+                    </div>
+                    <div class="d-flex flex-column justify-content-evenly py-4 px-4 px-lg-0 py-lg-0 order-lg-0 txt-a">
+                        <h5 class="text-uppercase poppins-bold pb-lg-4 pb-2 text-center text-lg-start">Placeholder 1</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vero.</p>
+                        <p>two</p>
+                        <p>three</p>
+                        <p>four</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-lg-row flex-column row-cols-lg-2 py-lg-5 px-lg-5 py-3 px-3 progContainer">
+                    <div class="d-flex justify-content-center">
+                        <img src="/Images/Program/kidsImage.svg" class="img-fluid imageContainer" alt="" />
+                    </div>
+                    <div class="d-flex flex-column justify-content-evenly py-4 px-4 px-lg-0 py-lg-0">
+                        <h5 class="text-uppercase poppins-bold pb-lg-4 pb-2 text-center text-lg-start">Placeholder 2</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vero.</p>
+                        <p>two</p>
+                        <p>three</p>
+                        <p>four</p>
+                    </div>
+                </div>
+            </div>
             <div class="d-flex justify-content-center row-cols-lg-2 py-lg-5 px-lg-5 py-3 px-3">
-                <button type="button" class="btn border-0">
+                <button type="button" class="btn border-0" data-bs-toggle="collapse" data-bs-target="#collapsedProgram">
                     <img id="buttonSize" src="/Images/Program/DownButton.svg" style="width: 10%" />
                 </button>
             </div>
@@ -118,6 +144,23 @@
                 }
             }
         </style>
+        <script>
+            var rotation = 0;
+
+            $("#buttonSize").click(function () {
+                rotation = (rotation + 180)%360;
+                $(this).css({
+                    "-webkit-transform": "rotate("+ rotation +"deg)",
+                    "-moz-transform": "rotate("+ rotation +"deg)",
+                    "transform": "rotate("+ rotation +"deg)",
+                    "-ms-transform": "rotate("+ rotation +"deg)",
+                    "-o-transform": "rotate("+ rotation +"deg)",
+                });
+                console.log("isClicked " + rotation);
+            });
+
+            
+        </script>
         <!-- End of Programs -->
 
         <!-- Testimony Section -->
